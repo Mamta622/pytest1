@@ -5,6 +5,7 @@ from playwright.sync_api import Page,expect
 
 @allure.feature("demoQa login")
 @allure.story("verify login page")
+@allure.severity(allure.severity_level.CRITICAL)
 
 def test_valid_login(page: Page):
     page.goto("https://demoqa.com/login")

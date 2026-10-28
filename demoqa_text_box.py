@@ -5,6 +5,8 @@ from playwright.sync_api import Page, expect
 
 @allure.feature("DemoQA Textbox")
 @allure.story("Verify valid Full Name")
+@allure.severity(allure.severity_level.CRITICAL)
+
 def test_valid_name(page: Page):
     page.goto("https://demoqa.com/text-box")
 
